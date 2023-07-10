@@ -16,7 +16,7 @@ n = int(input())
 count = 0
 result = 0
 
-for i in range(n):
+for i in range (n):
     temp = int(input(f"{i + 1}-день: "))
     if temp > 0:
         count += 1
