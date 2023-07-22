@@ -5,19 +5,19 @@
 # что Петя и Сережа сделали одинаковое количество журавликов, 
 # а Катя сделала в два раза больше журавликов, чем Петя и Сережа вместе?
 
-s = int(input())
-petya = (s // 3) // 2
-sereja = petya
-katya = (sereja + petya) * 2
-if s % 2 == 0:
-    print(petya, katya, sereja)
-else: print('нельзя определить')
+# s = int(input())
+# petya = (s // 3) // 2
+# sereja = petya
+# katya = (sereja + petya) * 2
+# if s % 2 == 0:
+#     print(petya, katya, sereja)
+# else: print('нельзя определить')
 
 # Решение преподавателя
-# s = int(input())
-# if s % 6:
-#     print('нельзя определить')
-# else:
-#     katya = 2 * s // 3
-#     petya = sereja = s // 6
-#     print (petya, katya, sereja)
+s = int(input())
+if s % 6:
+    print('нельзя определить')
+else:
+    katya = 2 * s // 3
+    petya = sereja = s // 6
+    print (petya, katya, sereja)
