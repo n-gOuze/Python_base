@@ -3,7 +3,15 @@
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0)
 
-number = int(input())
-print(number % 10 + 
-      number % 100 // 10 +
-      number // 100)
+# number = int(input())
+# print(number % 10 + 
+#       number % 100 // 10 +
+#       number // 100)
+
+# Решение циклом
+num = int(input())
+num_sum = 0
+
+while num: # пока есть значимое (пока есть число)
+    num_sum += num % 10 # получаем последнюю цифру числа и суммируем его
+    num // 10 # убираем последнюю цифру числа
