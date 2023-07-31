@@ -30,3 +30,31 @@ for i in range(0, number, 1):
         if count <= min_count:
             min_count = count
 print(f'Минимальное количество монет: {min_count}')
+
+# Решение преподавателя 1
+
+n = int(input())
+count_one = count_zero = 0
+
+for i in range(n):
+    coin = int(input())
+    if coin:
+        count_one += 1
+    else: 
+        count_zero += 1
+
+if count_one > count_zero:
+    print(count_zero)
+else:
+    print(count_one)
+
+# Решение преподавателя 2
+
+n = int(input())
+count = 0
+
+for i in range(n):
+    if int(input()):
+        count += 1
+
+print (min(count, n - count))
