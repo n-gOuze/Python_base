@@ -9,3 +9,12 @@ while power < number / 2:
     power = power * 2
     print(power)
 # при таком решении нулевой степени не получается
+
+# Решение преподавателя
+
+n = int(input())
+pow_two = 1
+
+while pow_two <= n:
+    print(pow_two, end=" ")
+    pow_two *= 2
