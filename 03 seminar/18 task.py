@@ -21,6 +21,7 @@ right_num = list_nums[0]
 for i in list_nums: # в данном случае пробегается по значениям содержимого
     # если б было for i in range, то по индексам
     if abs(num - i) < abs(num - right_num): # вычитаем из нашего числа значения и смотрим наименьшее отклонение
+        # abs - взятие числа по модулю (без условия знака, т.е. отрицательное становится положительным)
         right_num = i
 
 print(right_num)
@@ -35,6 +36,8 @@ list_nums = [randint(1, 50) for _ in range(n)]
 print(list_nums)
 
 b = int(input())
-m = min(list_nums, key=lambda x: abs(x - b))
+m = min(list_nums, key=lambda x: abs(x - b)) # key утончяет, на что смотреть программе:
+# пробежаться по всем элементам, запомнить разность между элементом и числом, 
+# и из этих элементов выбрать наименьшее и вернуть число
 
 print(m)
