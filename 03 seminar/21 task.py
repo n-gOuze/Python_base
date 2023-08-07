@@ -11,7 +11,8 @@ list_dict = [{"V": "S001"}, {"V": "S002"},
              {"VII": " S005 "}, {" V ":" S009 "}, 
              {" VIII":" S007 "}]
 
+# print(set(list(i.values())[0].strip() for i in list_dict))
+
 tmp = [list(i.values())[0].strip() for i in list_dict] # достаем значения из словаря
 
 print(set(tmp)) # set - убирает дубликаты
-
