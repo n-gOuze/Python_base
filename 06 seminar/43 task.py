@@ -9,7 +9,7 @@
 # Вывод:
 # 2
 
-list_n = [int(input()) for i in range int(input)]
+list_n = [int(input()) for i in range (int(input()))]
 # set_n = list(set(list_n))
 # list_m = print(sum([list_n.count(set_n[i])//2 for i in range(len(set_n))]))
 
